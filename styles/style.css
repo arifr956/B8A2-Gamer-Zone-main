@@ -1,0 +1,13 @@
+body {
+    font-family: Work Sans;
+}
+
+.right-nav {
+    display: flex;
+    font-size: 45px;
+    font-weight: 700;
+}
+header , main {
+    padding-left: 240px;
+    padding-right: 240px;
+}
