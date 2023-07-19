@@ -162,11 +162,11 @@ main {
     text-align: center;
 }
 .funny-title .goat {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .funny-title {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     color: #0B0223;
     margin: 10px auto;
@@ -195,6 +195,13 @@ main {
 
     .banner {
         align-items: center;
+        height: auto;
+    }
+    .funny-title .goat, .funny-title{
+        font-size: 1.5rem;
+    }
+    .funny-title p{
+        font-size: .5rem;
     }
 }
 
@@ -208,6 +215,7 @@ main {
     .left-nav>ul,
     .banner {
         flex-direction: column;
+        height: auto;
     }
 
     .banner-text {
