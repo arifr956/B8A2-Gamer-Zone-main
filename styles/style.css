@@ -4,8 +4,9 @@ body {
 }
 
 .header {
-    padding: 0px 10%;
+    margin: 0 10%;
     max-width: 1440px;
+    margin-bottom: 20px;
 }
 
 .navigation {
@@ -87,14 +88,14 @@ span {
 }
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 20px 10%;
 }
 
 .banner {
-    height: 700px;
-    margin: 10px 10%;
+    height: 600px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 30px;
 }
 .banner-text{
@@ -138,8 +139,8 @@ main{
     font-size: 1.2rem;
     font-weight: 500;
 }
-.banner-img{
-    width: 90%;
+.img-1{
+    width: 100%;
 }
 .btn-primary {
     display: inline-flex;
@@ -170,12 +171,17 @@ main{
         margin: 10px auto;
         text-align: center;
     }
+    .banner{
+        align-items: center;
+    }
+    
+    
 }
 
 
 @media screen and (min-width:576px) and (max-width: 992px) {
     header {
-        padding: 60px;
+        padding: 20px;
     }
 
     .navigation,
@@ -186,5 +192,14 @@ main{
         width: 90%;
         margin: 10px auto;
         text-align: center;
+    }
+    .banner-text ul{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .banner-text li{
+        display: block;
+        
     }
 }
