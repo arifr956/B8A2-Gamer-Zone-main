@@ -158,9 +158,11 @@ main {
     background: #FF42A5;
     color: white;
 }
-.funny{
+
+.funny {
     text-align: center;
 }
+
 .funny-title .goat {
     font-size: 3rem;
 }
@@ -172,6 +174,32 @@ main {
     margin: 10px auto;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: 500px;
+}
+
+.cards p {
+    color: #534C64;
+    font-size: 1.2erm;
+    font-weight: 500;
+}
+
+.cards img {}
+
+.cards-1 {
+    width: 342px;
+    height: 400px;
+}
+.cards-1 :hover{
+    display: overlay;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    opacity: 0.2;
 
 /* media query section
   */
@@ -183,7 +211,8 @@ main {
 
     .navigation,
     .left-nav>ul,
-    .banner, .funny {
+    .banner,
+    .funny {
         flex-direction: column;
     }
 
@@ -197,10 +226,13 @@ main {
         align-items: center;
         height: auto;
     }
-    .funny-title .goat, .funny-title{
+
+    .funny-title .goat,
+    .funny-title {
         font-size: 1.5rem;
     }
-    .funny-title p{
+
+    .funny-title p {
         font-size: .5rem;
     }
 }
@@ -223,6 +255,7 @@ main {
         margin: 10px auto;
         text-align: center;
     }
+
     .banner-text li {
         display: block;
 
