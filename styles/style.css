@@ -177,7 +177,7 @@ main {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 500px;
 
 }
@@ -196,9 +196,9 @@ main {
 .cards-1 {
     position: relative;
     display: inline-block;
-  }
-  
-  .hover-overlay {
+}
+
+.hover-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -213,29 +213,50 @@ main {
     justify-content: center;
     align-items: center;
     transition: opacity 0.3s ease;
-  }
-  
-  .cards-1:hover .hover-overlay {
+}
+
+.cards-1:hover .hover-overlay {
     opacity: 1;
-  }
-  
-  .icon {
+}
+
+.icon {
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  .text {
+}
+
+.text {
     font-size: 16px;
     cursor: pointer;
-  }
-  .play-container{
+}
+
+.play-container {
     display: flex;
 
-  }
-  .left-play{
+}
+
+.left-play {
     width: 50%;
-  }
-  
+    padding-right: 100px;
+}
+
+.left-play h2 {
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.left-play p {
+    color: #534C64;
+    text-align: right;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.right-play {
+    width: 50%;
+}
 
 /* media query section
   */
@@ -251,6 +272,7 @@ main {
     .funny {
         flex-direction: column;
     }
+
     .goat {
         font-size: 4rem;
     }
@@ -274,8 +296,9 @@ main {
     .funny-title p {
         font-size: .5rem;
     }
-    .cards{
-        grid-template-columns: repeat(1,1fr);
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -292,16 +315,19 @@ main {
         height: auto;
         justify-content: center;
     }
+
     .goat {
         font-size: 4rem;
     }
+
     .banner-text {
         width: 90%;
         margin: 10px auto;
         text-align: center;
     }
-    .cards{
-        grid-template-columns: repeat(2,1fr);
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
 
