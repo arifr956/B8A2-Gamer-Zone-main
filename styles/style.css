@@ -313,31 +313,59 @@ div {
     text-align: center;
     padding: 10px;
 }
-footer{
+
+footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background: #0B0223;
 }
+
 footer .gamer {
     justify-content: center;
     color: #FFF;
     padding-bottom: 50px;
 }
 
-.footer-a {
+.footer-a,
+.footer-last {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
+    width: 80%;
     justify-content: center;
-    
-    text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
+    padding-bottom: 50px;
 }
 
 .footer-a a {
     text-decoration: none;
     color: #FFF;
+}
+
+.footer-last a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-link {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    width: 80%;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* media query section
@@ -399,6 +427,8 @@ footer .gamer {
         max-width: 90% justify-content: center;
     }
 
+    .footer-a,
+    .footer-link,
     .button-family {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -451,8 +481,11 @@ footer .gamer {
         height: auto;
     }
 
-    .button-family {
+    .button-family,
+    .footer-a,
+    .footer-link {
         grid-template-columns: repeat(3, 1fr);
     }
+
 
 }
