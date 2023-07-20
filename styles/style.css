@@ -274,9 +274,71 @@ main {
     bottom: 250px;
     margin: 0;
 }
+
 div {
     white-space: normal;
-  }
+}
+
+.button-family {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.btn-last {
+    width: 243px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FFF;
+    border: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.btn-last:hover {
+    width: 243px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FFF;
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #0B0223;
+}
+footer .gamer {
+    justify-content: center;
+    color: #FFF;
+    padding-bottom: 50px;
+}
+
+.footer-a {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    justify-content: center;
+    
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer-a a {
+    text-decoration: none;
+    color: #FFF;
+}
 
 /* media query section
   */
@@ -286,7 +348,8 @@ div {
         padding: 20px;
     }
 
-    .navigation,.play-container,
+    .navigation,
+    .play-container,
     .left-nav>ul,
     .banner,
     .funny {
@@ -318,21 +381,28 @@ div {
     }
 
     .cards {
+        height: auto;
         grid-template-columns: repeat(1, 1fr);
     }
-    .left-play{
-        width: 100%;
-        padding-right: 0;
-        justify-content: center;
+
+    .play-container {
+        height: auto;
     }
-    
-    .right-play{
+
+    .left-play {
         width: 100%;
         padding-right: 0;
         justify-content: center;
     }
 
-    
+    .right-play {
+        max-width: 90% justify-content: center;
+    }
+
+    .button-family {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 
 
@@ -342,7 +412,8 @@ div {
     }
 
     .navigation,
-    .left-nav>ul, .play-container,
+    .left-nav>ul,
+    .play-container,
     .banner {
         flex-direction: column;
         height: auto;
@@ -360,18 +431,28 @@ div {
     }
 
     .cards {
+        height: auto;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
-    .left-play{
+
+    .left-play {
         width: 100%;
         padding-right: 0;
         justify-content: center;
     }
-    .right-play{
-        width: 100%;
-        padding-right: 0;
+
+    .right-play {
+        max-width: 90%;
         justify-content: center;
+    }
+
+    .play-container {
+        height: auto;
+    }
+
+    .button-family {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
