@@ -118,7 +118,7 @@ main {
 }
 
 .goat {
-    font-size: 5.9rem;
+    font-size: 5.5rem;
     font-weight: 800;
     text-transform: uppercase;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -405,10 +405,6 @@ footer {
     .banner,
     .funny {
         flex-direction: column;
-    }
-
-    .goat {
-        font-size: 4rem;
     }
 
     .banner-text {
