@@ -179,6 +179,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 500px;
+    margin-bottom: 20px;
 
 }
 
@@ -231,6 +232,7 @@ main {
 
 .play-container {
     display: flex;
+    margin-top: 30px;
 
 }
 
@@ -257,6 +259,7 @@ main {
 
 .right-play {
     width: 50%;
+    padding: 20px;
 }
 
 .play-img-1 {
@@ -267,10 +270,13 @@ main {
 
 .play-img-2 {
     border-radius: 8px;
-    border: 10px solid #FFF;
     position: relative;
     bottom: 250px;
+    margin: 0;
 }
+div {
+    white-space: normal;
+  }
 
 /* media query section
   */
@@ -280,7 +286,7 @@ main {
         padding: 20px;
     }
 
-    .navigation,
+    .navigation,.play-container,
     .left-nav>ul,
     .banner,
     .funny {
@@ -314,6 +320,19 @@ main {
     .cards {
         grid-template-columns: repeat(1, 1fr);
     }
+    .left-play{
+        width: 100%;
+        padding-right: 0;
+        justify-content: center;
+    }
+    
+    .right-play{
+        width: 100%;
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    
 }
 
 
@@ -323,7 +342,7 @@ main {
     }
 
     .navigation,
-    .left-nav>ul,
+    .left-nav>ul, .play-container,
     .banner {
         flex-direction: column;
         height: auto;
@@ -342,6 +361,16 @@ main {
 
     .cards {
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .left-play{
+        width: 100%;
+        padding-right: 0;
+        justify-content: center;
+    }
+    .right-play{
+        width: 100%;
+        padding-right: 0;
         justify-content: center;
     }
 
