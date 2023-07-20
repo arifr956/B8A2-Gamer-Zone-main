@@ -90,6 +90,7 @@ span {
 main {
     max-width: 1440px;
     margin: 20px 10%;
+    flex-wrap: wrap;
 }
 
 .banner {
@@ -235,12 +236,13 @@ main {
 .play-container {
     display: flex;
     margin-top: 30px;
+    width: 100%;
 
 }
 
 .left-play {
     /* width: calc(50%-100px); */
-    padding-right: 100px;
+    padding-right: 50px;
     align-items: center;
 }
 
@@ -263,8 +265,6 @@ main {
 }
 
 .right-play {
-    width: calc(50%-100px);
-    padding: 20px;
 }
 
 .play-img-1 {
