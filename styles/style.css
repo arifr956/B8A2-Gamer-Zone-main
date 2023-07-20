@@ -280,11 +280,14 @@ div {
 }
 
 .button-family {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
 }
 
 .btn-last {
+    flex: 0 0 calc(20% - 20px);
     width: 243px;
     height: 80px;
     flex-shrink: 0;
@@ -328,22 +331,24 @@ footer .gamer {
 
 .footer-a,
 .footer-last {
+
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
-    width: 80%;
-    justify-content: center;
+    max-width: 80%;
     font-size: 1.2rem;
     font-weight: 600;
     padding-bottom: 50px;
 }
 
 .footer-a a {
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #FFF;
 }
 
-.footer-last a {
+.footer-last a, .footer-link a {
     text-decoration: none;
     color: #FFF;
 }
@@ -357,8 +362,10 @@ footer .gamer {
     padding-bottom: 50px;
 }
 
-.fa-facebook {
-    color: #3B5998;
+.fa {
+    color: #FFF;
+    width: 40px;
+    height: 40px;
 }
 
 .copyright {
@@ -424,14 +431,26 @@ footer .gamer {
     }
 
     .right-play {
-        max-width: 90% justify-content: center;
+        max-width: 90%;
+    }
+
+    .button-family {
+        margin: 20px 30px;
+        display: grid;
+        gap: 15px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .footer-a,
     .footer-link,
-    .button-family {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btn-last {
+    flex: 0 0 calc(33% - 20px);
+}
 
 }
 
@@ -481,7 +500,14 @@ footer .gamer {
         height: auto;
     }
 
-    .button-family,
+    .button-family {
+        margin: 20px 30px;
+        display: grid;
+        gap: 15px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .footer-a,
     .footer-link {
         grid-template-columns: repeat(3, 1fr);
