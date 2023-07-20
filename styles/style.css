@@ -254,8 +254,22 @@ main {
     font-weight: 400;
     line-height: 30px;
 }
+
 .right-play {
     width: 50%;
+}
+
+.play-img-1 {
+    border-radius: 8px;
+    height: 75%;
+    margin-left: 80px;
+}
+
+.play-img-2 {
+    border-radius: 8px;
+    border: 10px solid #FFF;
+    position: relative;
+    bottom: 250px;
 }
 
 /* media query section
